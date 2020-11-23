@@ -1,0 +1,42 @@
+@import "../../styles/utils/variables";
+
+.about {
+  position: relative;
+  padding-bottom: 50px;
+
+  &__text {
+    margin: 100px 10%;
+    width: 70%;
+
+    p {
+      font-size: 1.125rem;
+      color: #222222;
+    }
+  }
+
+  .illustration-box {
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+
+    .illustration {
+      padding: 0 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    hr {
+      margin: 0;
+      background: $grey;
+      height: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .man {
+    display: none !important;
+  }
+}

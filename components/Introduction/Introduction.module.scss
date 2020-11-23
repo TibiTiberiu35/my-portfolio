@@ -1,0 +1,127 @@
+@import "../../styles/utils/variables";
+
+.first-section {
+  padding: 0 10%;
+
+  .introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    font-size: 1.5rem;
+
+    .text-content {
+      margin-bottom: 100px;
+
+      .greeting {
+        color: #444444;
+        margin-bottom: 5px;
+      }
+
+      h1 {
+        color: $black;
+        font-size: 3rem;
+        margin-top: 0px;
+
+        span {
+          color: $blue;
+        }
+      }
+
+      .description {
+        color: #222222;
+
+        span {
+          text-transform: uppercase;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .portfolio-button {
+        background: $black;
+        color: $white;
+        width: 100%;
+        max-width: 350px;
+        height: 60px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 1.25rem;
+        }
+      }
+
+      .github-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 380px) {
+        flex-direction: column;
+
+        .github-button {
+          border: 2px solid $black;
+          border-radius: $button-radius;
+          width: 100%;
+          height: 60px;
+          font-size: 1.25rem;
+
+          img {
+            display: none !important;
+          }
+
+          p {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .what-is-next-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;
+    transition: 0.3s;
+
+    p {
+      font-size: 1rem;
+    }
+
+    &.active {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction {
+    margin-top: 200px;
+    height: 50vh;
+    justify-content: flex-start;
+
+    .text-content h1 {
+      font-size: 2.75rem;
+    }
+
+    .illustration {
+      display: none;
+    }
+  }
+}

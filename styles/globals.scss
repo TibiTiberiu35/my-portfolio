@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth !important;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat-Regular;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat-Regular;
+  background: #f4f4f4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+hr {
+  border: none;
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../public/fonts/Montserrat-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(../public/fonts/Montserrat-SemiBold.ttf);
+  font-display: swap;
+}
